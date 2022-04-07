@@ -1,0 +1,34 @@
+ body .dark {
+    font-family: 'Poppins', sans-serif;
+    
+    background-image: url(../images/dark-elements.png);
+    position: relative;
+    // z-index: ;
+
+    &::after{
+        background-color: #000;
+        position:absolute;
+        top: 0;
+        left: 0;
+        background-attachment: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        content: "";
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+}
+
+.thembutton{
+    font-size: 35px;
+    color: white;
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: 38px;
+    right: 60px;
+    cursor: pointer;
+    z-index: 888;
+}

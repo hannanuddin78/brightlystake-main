@@ -1,0 +1,38 @@
+// font-family: 'Poppins', sans-serif;
+.dark .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 99;
+}
+
+
+.dark .navbar-nav {
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 6px 8px 15px rgba(59, 61, 191, 0.05);
+    backdrop-filter: blur(30px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.dark .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    padding: 0px 25px;
+    line-height: 60px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.dark .navbar-light .navbar-nav .nav-link.active {
+    background: #FFFFFF;
+    border-radius: 20px;
+    color: black;
+}
+
+.navbar-toggler {
+    border: none;
+}

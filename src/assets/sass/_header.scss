@@ -1,0 +1,46 @@
+// font-family: 'Poppins', sans-serif;
+.light .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 99;
+}
+
+
+.light .navbar-nav {
+    padding: 15px 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 0.5px solid #FFFFFF;
+    box-shadow: 6px 8px 15px rgba(59, 61, 191, 0.05);
+    backdrop-filter: blur(30px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 30px;
+}
+
+.light .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    padding: 0px 25px;
+    line-height: 60px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.light .navbar-light .navbar-nav .nav-link.active {
+    background: #FFFFFF;
+    border-radius: 20px;
+    color: black;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/x.svg);
+}
+.navbar-light .collapsed .navbar-toggler-icon {
+    background-image: url(../images/navbar.svg);
+}
+.navbar-toggler {
+    border: none;
+}
+

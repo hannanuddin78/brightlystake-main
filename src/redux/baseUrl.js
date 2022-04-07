@@ -1,0 +1,1 @@
+export const baseUrl = 'https://moon-374e4-default-rtdb.firebaseio.com/';

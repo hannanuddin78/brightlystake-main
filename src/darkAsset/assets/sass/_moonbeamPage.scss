@@ -1,0 +1,437 @@
+.dark #moonbeamBanner {
+    height: 350px;
+    position: relative;
+    padding-top: 190px;
+
+    h2 {
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 63px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 40px 0px 0px;
+    }
+}
+
+.dark #moonbeamBoxes {
+    padding: 30px 0px;
+
+    .box {
+        padding: 15px 15px 0px;
+        border: 1px solid rgba(161, 159, 159, 0.247);
+        box-sizing: border-box;
+        background: linear-gradient(84.04deg, rgba(59, 20, 171, 0.15) 0%, rgba(66, 83, 225, 0.15) 97.37%);
+        /* Glass */
+        overflow: hidden;
+
+        box-shadow: 6px 8px 15px rgba(59, 61, 191, 0.05);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px;
+        height: 115px;
+        text-align: center;
+        position: relative;
+        transition: all linear 0.3s;
+
+        p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            text-transform: capitalize;
+            color: #A6B0CF;
+            padding-top: 5px;
+            transition: all linear 0.3s;
+            cursor: pointer;
+        }
+
+        h6 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: capitalize;
+            color: #fff;
+            transition: all linear 0.3s;
+        }
+
+
+
+        &:before {
+            position: absolute;
+            content: " ";
+            background-image: url("../images/box-hover.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 85px;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: all linear 0.3s;
+        }
+
+        &:hover {
+            background-color: #4F46BB;
+
+            p {
+                color: #fff;
+            }
+
+            h6 {
+                color: #fff;
+            }
+
+            &:before {
+                position: absolute;
+                content: " ";
+                background-image: url("../images/box-hover.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                top: 0px;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 1;
+                border-radius: 20px;
+                transition: all linear 0.3s;
+            }
+        }
+    }
+
+    .last-box {
+        h6 {
+            font-size: 16px;
+        }
+    }
+
+    .second-line {
+        padding-top: 30px;
+    }
+}
+
+.dark #moonbeamStage {
+    padding: 130px 0 60px;
+
+    h2 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 48px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: capitalize;
+        color: #777777;
+
+        span {
+            color: #46D35C;
+        }
+    }
+
+    .last-line {
+        padding-bottom: 50px;
+    }
+
+    .table-head {
+        ul {
+            padding: 0;
+
+            li {
+                display: inline-block;
+                width: 12%;
+                text-align: center;
+                font-size: 14px;
+                line-height: 26px;
+                color: #262B3C;
+                font-weight: normal;
+            }
+
+
+
+            .two {
+                width: 35%;
+            }
+
+            .six {
+                width: 14%;
+            }
+
+        }
+
+    }
+
+    .accordion-item {
+        margin-bottom: 15px;
+        border: none;
+
+        .accordion-button {
+            color: #222737;
+            background: #FFFFFF;
+            border: 0.25px solid #2227375e;
+            box-sizing: border-box;
+            box-shadow: 6px 8px 15px rgba(59, 61, 191, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 15px;
+            padding: 0;
+
+            ul {
+                padding: 0;
+                width: 100%;
+                margin-bottom: 0px;
+
+                li {
+                    display: inline-block;
+                    width: 12%;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #262B3C;
+                    font-weight: normal;
+                    padding: 40px 0;
+                }
+
+                .four {
+                    color: #27E2A2;
+                }
+
+
+                .two {
+                    width: 35%;
+                }
+
+                .six {
+                    width: 14%;
+                }
+
+            }
+
+            &::after {
+                width: 1rem;
+                height: 1rem;
+                background-size: 1rem;
+                right: 30px;
+                position: absolute;
+            }
+
+            .active-btn {
+                color: #fff;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 26px;
+                width: 100px;
+                height: 46px;
+                background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+                border-radius: 10px;
+                border: none;
+            }
+
+            .inactive-btn {
+                color: #fff;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 26px;
+                width: 100px;
+                height: 46px;
+                background: linear-gradient(84.04deg, #DE0000 0%, #FF4D00 97.37%);
+                border-radius: 10px;
+                border: none;
+            }
+
+            // &.collapsed{
+            //     // background-color: green;
+            // }
+            &:focus {
+                background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+                backdrop-filter: blur(20px);
+                /* Note: backdrop-filter has minimal browser support */
+
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-bottom: none;
+
+                .active-btn {
+                    color: #222737;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 26px;
+                    width: 100px;
+                    height: 46px;
+                    background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+                    border-radius: 10px;
+                    border: none;
+                }
+
+                .inactive-btn {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 26px;
+                    width: 100px;
+                    height: 46px;
+                    background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+                    border-radius: 10px;
+                    border: none;
+                }
+
+                ul {
+
+                    li {
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+            border-radius: 0px;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+            ul {
+                li {
+                    color: white;
+                }
+            }
+
+            .active-btn {
+                color: #222737;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 26px;
+                width: 100px;
+                height: 46px;
+                background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+                border-radius: 10px;
+                border: none;
+            }
+
+            .inactive-btn {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 26px;
+                width: 100px;
+                height: 46px;
+                background: linear-gradient(77.39deg, #27E2A2 -4.57%, #C1ED30 86.87%);
+                border-radius: 10px;
+                border: none;
+            }
+        }
+    }
+
+
+
+
+
+
+    .accordion-body {
+        padding: 0;
+        color: #fff;
+        background: linear-gradient(84.04deg, #3B14AB 0%, #4253E1 97.37%);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 3%;
+            height: 1px;
+            width: 92%;
+            background-color: #777777;
+            content: '';
+        }
+
+        ul {
+            padding: 0;
+            width: 100%;
+            margin-bottom: 0px;
+
+            li {
+                display: inline-block;
+                width: 23%;
+                text-align: center;
+                font-size: 14px;
+                line-height: 26px;
+                color: #fff;
+                font-weight: normal;
+                padding: 40px 0;
+
+                .action-btn {
+                    background: rgba(238, 238, 238, 0.1);
+                    border: 0.5px solid #FFFFFF;
+                    box-sizing: border-box;
+                    border-radius: 15px;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                    padding: 15px;
+
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                        margin-left: 5px;
+                    }
+                }
+
+
+                p {
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 26px;
+                    padding-bottom: 0px;
+                    color: #EEEEEE;
+                }
+
+                h4 {
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 48px;
+                    color: #EEEEEE;
+                }
+            }
+
+            .three {
+                h4 {
+                    /* Fallback: Set a background color. */
+                    background-color: red;
+
+                    /* Create the gradient. */
+                    background-image: linear-gradient(90deg, #27E2A2, #C1ED30);
+
+                    /* Set the background size and repeat properties. */
+                    background-size: 100%;
+                    background-repeat: repeat;
+
+                    /* Use the text as a mask for the background. */
+                    /* This will show the gradient as a text color rather than element bg. */
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-background-clip: text;
+                    -moz-text-fill-color: transparent;
+                }
+            }
+
+            .four {
+                text-align: right !important;
+                width: 26%;
+            }
+
+        }
+    }
+
+}

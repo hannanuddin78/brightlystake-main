@@ -1,0 +1,13 @@
+ body .light {
+    font-family: 'Poppins', sans-serif;
+}
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("../images/whtieCheck.svg");
+    // transform: rotate(1deg);
+}
